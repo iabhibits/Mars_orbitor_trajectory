@@ -86,7 +86,7 @@ def minimize_loss(alpha,beta,a,b):
     return opt_param,loss
 
 if __name__ == '__main__':
-    alpha, beta = longitude('../data/01_data_mars_opposition.csv')
+    alpha, beta = longitude('01_data_mars_opposition.csv')
     opt_param, loss = minimize_loss(alpha,beta,5,3)
     print("Value of x is : ",opt_param[0])
     print("Value of y is : ",opt_param[1])
